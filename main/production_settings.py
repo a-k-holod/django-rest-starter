@@ -131,3 +131,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CORS_ALLOW_ALL_ORIGINS = True  # You might want to set this to True for development.
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',  # Add the URL where your Next.js app is hosted.
+    'https://django-rest-starter-production-0e39.up.railway.app',  # Add your production domain.
+]
